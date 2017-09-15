@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="inputBox">Enter Text:</label>
+  <input class="form-control" id="inputBox" [(ngModel)]="username">
+</div>
+<div>
+  {{ username }}
+</div>
+<button class="btn btn-primary" [disabled]="username === ''" (click)="OnButtonClick()">
+  Click me
+</button>
+

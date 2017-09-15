@@ -1,0 +1,12 @@
+<button class="btn btn-primary" (click)="OnButtonClick()">
+  Display details
+</button>
+<p [hidden]="!showParagraph">
+  Content
+</p>
+<div *ngFor="let logCount of buttonArray; let x of index">
+  <p  [ngClass]="{whiteText: x > 4}" [ngStyle]="{backgroundColor: x > 4 ? 'blue' : 'transparent'}">
+    {{logCount}}
+  </p>
+</div>
+
